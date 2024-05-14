@@ -1,0 +1,91 @@
+import java.net
+import java.io
+import java.util
+/// passing the data parameters
+
+public static void main(String[]args
+throws IOException,Interrupted,Exception)
+{
+
+DatagramSocket ss=new DatagramSocket(1234);
+ InetAdress ip=InetAdress.getLocalHost();
+ System.out.println("getLocalHost")
+
+ System.out.println("DatagramSocket")
+
+
+Thread ssend;
+ssend=new Thread(new Runnable() {
+@override
+public void run()
+{
+    try{
+        Scanner sc=new Scanner(System.in);
+while(trie) {
+    syncronized(this)
+    {
+        byte[] sd=new byte[1000];
+
+        sd=sc.nextLine().getBytes();
+DatagrapPacket sp=new DatagrapPacket(sd,sd.length,ip 5334);
+
+ss.send(sp);
+
+String msg=new String(sd)
+System.out,prinltn();
+/// Using the while loop, we can unpack the data packet for data transfer and print this value
+
+if(msg).equals("bye") {
+    System.out.println("bye)
+ 
+break;
+}
+System.out.println("Enter a msg.String")
+}
+    }
+}
+catch(Exception e ) {
+    System.out.println("Exception e");
+}
+}
+});
+/// Using the conditional if statement and the equals function, we point to the exception, which allows us to output the value
+Thread sreceive;
+sreceive=new Thread(new Runnable) {
+@override
+public void run()
+{
+    try {
+   while(true);
+   syncronuzed(this)
+    {
+
+        byte[]rd=new byte[1000]
+
+        DatagrammPacket sp1=new DatagramPacket(rd,rd.length);
+        ss.recieve(sp1);
+
+        String msg=(new String(rd).trim();
+        System.out.prinltn("String.rd.trim")
+
+    
+        if(msg.equals("file.read") {
+        System.out.prinltn("Finally block will always executed, irrespective of occurence of issue"); 
+        break;
+        }
+    }
+]
+    }
+    catch(Exception e) {
+        System.out.prinltn(""Error occured:
+        + exp.getMessage")
+    }
+}
+    });
+/// Using the while loop, we receive a certain data packet and end the loop using break, then use the  exception
+  
+    ssend.join();
+    srecieve.join();
+    }
+}
+////we combine the rows, and the rest are attached to the selected array
