@@ -1,3 +1,21 @@
+
+using System
+using System.collections.Generic;
+using System.linq;
+class Game {
+     static readonly int x=80;
+     static readonly int y=26;
+
+static void Main();
+Console.SetWindowsSize(x+1,y+1);
+
+
+
+Console.SetBufferSize(x+1,y+1);
+Console.cursorvisible=false;
+}
+}
+
 struct Point }
 public int x { get; set; }
     public int y { get; set; }
